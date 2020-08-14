@@ -9,7 +9,6 @@ export default function Login() {
 
     const handleSubmit = e => {
         e.preventDefault()
-        console.log(email, password)
         setEmail("")
         setPassword("")
     }
@@ -17,8 +16,7 @@ export default function Login() {
     return (
         <div id="log">
             <div className="log-cont">
-            <Link className="abs" to="/">Back to home</Link>
-                <h1>Login</h1>
+                <h1 className="log-title">Login</h1>
                 <form className="log-form" onSubmit={handleSubmit}>
                     <div className="input-cont">
                         <label htmlFor="log-email">Email</label>
@@ -46,6 +44,7 @@ export default function Login() {
                     </div>
                     <button className="log-btn" type="submit">Login</button>
                     <Link to="/register">New here? Click here to sign up!</Link>
+                    <Link to="/">Back to home</Link>
                 </form>
             </div>
         </div>

@@ -1,4 +1,4 @@
-#log {
+#reg {
     position: relative;
     height: 100vh;
     display: flex;
@@ -6,7 +6,11 @@
     align-items: center;
 }
 
-.log-cont {
+.invalid-input {
+    background-color: rgb(255, 202, 202);
+}
+
+.reg-cont {
     background-color: lightblue;
     height: 85vh;
     width: 80vw;
@@ -16,21 +20,7 @@
     align-items: center;
 }
 
-.log-title {
-    margin: 5vh 0;
-}
-
-.log-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-cont {
-    margin-bottom: 3vh;
-    /* background-color: rgb(0, 191, 255); */
-}
-
-.log-input {
+.reg-input {
     display: block;
     margin: 1vh 0 0 0;
     height: 5vh;
@@ -39,51 +29,57 @@
     font-size: 2.5vh;
 }
 
-.log-btn {
+.reg-btn {
     height: 5vh;
     margin: 20px 0 15px 0;
     border: 1px solid blue;
     border-radius: 20px;
 }
 
-.log-btn:hover {
-    cursor: pointer;
-}
 
 @media only screen and (max-height: 650px) {
-    #log {
+    #reg {
         display: block;
     }
 
-    .log-cont {
+    .log-title {
+        font-size: 30px;
+        margin: 2vh 0;
+    }
+
+    .reg-cont {
         height: 90vh;
-        min-height: 400px;
+        min-height: 500px;
         margin: 5vh auto;
     }
 
-    .log-input {
-        height: 30px;
-        font-size: 18px;
+    .reg-input {
+        height: 25px;
+        font-size: 15px;
         margin-top: 5px;
     }
 
-    .log-btn {
-        height: 30px;
+    .reg-btn {
+        height: 25px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .log-cont {
-        height: 60vh;
+    .reg-cont {
+        height: 80vh;
     }
 
-    .log-input {
+    .log-title {
+        margin: 2vh 0;
+    }
+
+    .reg-input {
         height: 30px;
         font-size: 18px;
         margin-top: 10px;
     }
 
-    .log-btn {
+    .reg-btn {
         height: 30px;
     }
 }

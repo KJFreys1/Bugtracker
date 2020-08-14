@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom'
 
 import './Login.css'
 
-export default function Login() {
+export default function Login({ history, getUser }) {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    const handleSubmit = e => {
-        e.preventDefault()
+    const handleSubmit = () => {
+        getUser({ email })
         setEmail("")
         setPassword("")
+        history.push("/dashboard")
     }
 
     return (

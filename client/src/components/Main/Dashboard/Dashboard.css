@@ -1,0 +1,59 @@
+#dash {
+    background-color: wheat;
+    padding-top: 50px;
+}
+
+.dash-title {
+    width: fit-content;
+    margin: 0 auto 50px;
+    font-size: 50px;
+}
+
+.dash-proj {
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+    margin: 20px 60px;
+    padding: 10px;
+}
+
+.dash-proj h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.dash-proj button {
+    height: 35px;
+    width: 70px;
+    margin: auto 10px;
+}
+
+.dash-proj button:hover {
+    cursor: pointer;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.dash-form {
+    padding: 10px 20px 10px 10px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    margin: auto 60px;
+}
+
+.dash-input {
+    height: 55px;
+    font-size: 32px;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+.dash-btn {
+    margin: auto 0;
+    height: 35px;
+    width: 20vw;
+    font-size: 16px;
+}

@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-temp {
+    height: 8vh;
+    width: 100%;
+    margin-bottom: 2vh;
+    background-color: wheat;
+}
+
+.lp-flex-a {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.lp-flex-item {
+    background-color: lightgray;
+    width: 45%;
+}
+
+.lp-flex-left {
+    display: flex;
+    padding: 20vh 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.lp-flex-left h1 {
+    margin: 0;
+    font-size: 10vh;
+}
+
+.lp-flex-left p {
+    margin: 0;
+    font-size: 4vh;
+}
+
+.lp-flex-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-cont {
+    background-color: black;
+    width: 450px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 400px) {
+    .lp-flex-left h1 {
+        font-size: 25px;
+    }
+}

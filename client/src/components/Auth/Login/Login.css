@@ -1,0 +1,69 @@
+#log {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abs {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.log-cont {
+    background-color: lightblue;
+    height: 80vh;
+    width: 80vw;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log-cont h1 {
+    margin: 5vh 0;
+}
+
+.log-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-cont {
+    margin-bottom: 3vh;
+    /* background-color: rgb(0, 191, 255); */
+}
+
+.log-input {
+    display: block;
+    margin: 1vh 0 0 0;
+    height: 5vh;
+    width: 70vw;
+    max-width: 400px;
+    font-size: 2.5vh;
+}
+
+.log-btn {
+    height: 5vh;
+    margin-top: 20px;
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+
+.log-btn:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .log-cont {
+        height: 60vh;
+    }
+
+    .log-input {
+        height: 30px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}

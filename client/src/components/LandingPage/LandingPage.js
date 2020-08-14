@@ -1,11 +1,12 @@
 import React from 'react'
+import NavBar from './NavBar/NavBar'
 
 import './LandingPage.css'
 
 export default function LandingPage() {
     return (
         <div id="lp">
-            <div className="nav-temp"></div>
+            <NavBar />
             <div className="lp-flex-a">
                 <div className="lp-flex-left lp-flex-item">
                     <h1>DevTickets</h1>

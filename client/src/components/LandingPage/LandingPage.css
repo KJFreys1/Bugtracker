@@ -5,13 +5,7 @@
 body, html {
     margin: 0;
     padding: 0;
-}
-
-.nav-temp {
-    height: 8vh;
-    width: 100%;
-    margin-bottom: 2vh;
-    background-color: wheat;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .lp-flex-a {
@@ -21,7 +15,6 @@ body, html {
 }
 
 .lp-flex-item {
-    background-color: lightgray;
     width: 45%;
 }
 
@@ -54,8 +47,43 @@ body, html {
     height: 300px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width:400px) {
     .lp-flex-left h1 {
+        font-size: 55px;
+    }
+
+    .lp-flex-left p {
         font-size: 25px;
+        text-align: center;
+    }
+
+    .video-cont {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .lp-flex-a {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .lp-flex-item {
+        width: 80%;
+    }
+
+    .lp-flex-left {
+        height: 90vh;
+        padding-top: 5vh;
+    }
+
+    .lp-flex-left h1 {
+        margin: 3vh 0;
+        text-align: center;
+    }
+
+    .lp-flex-right {
+        padding: 10vh 0;
     }
 }

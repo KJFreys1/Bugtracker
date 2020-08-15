@@ -20,7 +20,7 @@ export default function Dashboard({ userInfo, history }) {
     const [projects, setProjects] = useState([])
 
     useEffect(() => {
-        setProjects(projList.map(proj => addProject(proj)))
+        if (projList.length) setProjects(projList.map(proj => addProject(proj)))
     }, [projList])
 
     const addProject = proj => {
